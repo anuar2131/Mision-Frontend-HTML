@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pasteleria Anuar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="navbar">
+        <a ><img src="assets/images/logo_anuar.png" alt="Logo" class="logo"></a>
+        <a class="active" >PASTELERO</a>
+        <a class="active" href="pedido.html">PEDIDO</a>
+        <a class="active" href="inventario.html">INVENTARIO</a>
+        <a class="active" href="index.html">SALIR</a>
+
+    </div>
+
+    <section id="slider">
+        <img class="slider" src="assets/images/Slogan_anuar.png">
+        <img class="slider" src="">
+        <img class="slider" src="">
+        <div class="slider-botones" style="width:100%">
+            <span class="slider-izquierda" onclick="plusDivs(-1)">&#10094;</span>
+            <span class="slider-derecha" onclick="plusDivs(1)">&#10095;</span>
+        </div>
+    </section>
+
+    <section id="section-sabores">
+        <div class="contenedor-col-3">
+            <div class="detalle">
+                <h2>Tamaños</h2>
+                <p>
+                    <span class="descripcion">CHICO</span>
+                    <span class="precio">100</span>
+                </p>
+                <p>
+                    <span class="descripcion">MEDIANO</span>
+                    <span class="precio">130</span>
+                </p>
+                <p>
+                    <span class="descripcion">GRANDE</span>
+                    <span class="precio">180</span>
+                </p>
+                <p>
+                    <span class="descripcion">FAMILIAR</span>
+                    <span class="precio">200</span>
+                </p>
+            </div>
+            <div class="detalle">
+                <h2>Sabores</h2>
+                <p>
+                    <span class="descripcion">FRESA CON PHILADELPHIA</span>
+                    <span class="precio">100</span>
+                </p>
+                <p>
+                    <span class="descripcion">CHOCOLATE-QUESO</span>
+                    <span class="precio">80</span>
+                </p>
+                <p>
+                    <span class="descripcion">MANGO-LIMON</span>
+                    <span class="precio">70</span>
+                </p>
+                <p>
+                    <span class="descripcion">RED VELVET</span>
+                    <span class="precio">70</span>
+                </p>
+            </div>
+            <div class="detalle">
+                <h2>Adornos</h2>
+                <p>
+                    <span class="descripcion">Letras o números (c/u)</span>
+                    <span class="precio">10</span>
+                </p>
+                <p>
+                    <span class="descripcion">Imagen</span>
+                    <span class="precio">50</span>
+                </p>
+                <p>
+                    <span class="descripcion">Frutas</span>
+                    <span class="precio">40</span>
+                </p>
+                <p>
+                    <span class="descripcion">Figura</span>
+                    <span class="precio">200</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section-formulario">
+        <form action="/">
+            <div class="renglon">
+                <div class="columna-4">
+                    <label for="nombre">Nombre</label><br>
+                    <input name="nombre" type="text" placeholder="Nombre">
+                </div>
+                <div class="columna-4">
+                    <label for="telefono">Telefono</label><br>
+                    <input name="telefono" type="text" placeholder="Telefono">
+                </div>
+                <div class="columna-4">
+                    <label for="email">Email</label><br>
+                    <input name="email" type="email" placeholder="Correo">
+                </div>
+            </div>
+            <div class="renglon">
+                <div class="columna-12">
+                    <label for="descripcion">Descripcion</label><br>
+                    <textarea name="descripcion"></textarea>
+                </div>
+            </div>
+            <div class="renglon">
+                <div class="columna-4">
+                    <p>Tamaño</p>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">CHICO</label>
+                        <input type="radio" name="tamano">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">MEDIANO</label>
+                        <input type="radio" name="tamano">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">GRANDE</label>
+                        <input type="radio" name="tamano">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">FAMILIAR</label>
+                        <input type="radio" name="tamano">
+                    </div>
+                </div>
+   
+                <div class="columna-4">
+                    <p>Sabores</p>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">FRESA CON PHILADELPHIA</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">CHOCOLATE-QUESO</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">MANGO-LIMON</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">RED VELVET</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                </div>
+                <div class="columna-4">
+                    <p>Adornos</p>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">Letras o números</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">Imagen</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">Frutas</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                    <div class="contenedor-col-2">
+                        <label for="descripcion">Figura</label>
+                        <input type="checkbox" name="sabor">
+                    </div>
+                </div>
+            </div>
+            <div class="renglon">
+                <div class="columna-8"></div>
+                <div class="columna-2"><input type="reset" value="Reiniciar"></div>
+                <div class="columna-2"><input type="submit" value="Enviar"></div>
+            </div>
+        </form>
+    </section>
+   
+    <footer><a href=""></a></footer>
+<script src='main.js'></script>
+</body>
+   
+   
+   
+   
+   
+            </html>
